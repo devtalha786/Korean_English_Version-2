@@ -21,6 +21,8 @@ import GiftSearchProduct from '../Pages/Gift/SearchProduct';
 import ListingPage from '../Pages/ListingPage/Home'
 import ListingProductDetails from '../Pages/ListingPage/ListingProductDetails';
 import Reviews from '../Pages/ListingPage/Reviews';
+import Calender from '../Pages/ListingPage/Calender';
+import Finalpayment from '../Pages/ListingPage/Finalpayment';
 
 
 let routes = [
@@ -139,6 +141,16 @@ let routes = [
 	{
 		path:"/listing/reviews",
 		component: Reviews,
+		layout: "main",
+	},
+	{
+		path:"/listing/calender",
+		component: Calender,
+		layout: "main",
+	},
+	{
+		path:"/listing/payment",
+		component: Finalpayment,
 		layout: "main",
 	},
 

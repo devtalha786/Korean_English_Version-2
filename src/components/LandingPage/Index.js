@@ -6,14 +6,14 @@ import Footer from './Footer'
 const Index = () => {
   return (
     <>
-    <Header/>
+      <Header />
 
-    
 
-    <HeroSection/>
-    <div className='mt-[100px]'></div>
-    <Footer/>
-    
+
+      <HeroSection />
+      <div className='mt-[100px]'></div>
+      <Footer />
+
     </>
   )
 }
