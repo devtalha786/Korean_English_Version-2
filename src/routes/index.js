@@ -18,6 +18,9 @@ import GiftFavourite from '../Pages/Gift/Favourite';
 import GiftShipping from '../Pages/Gift/Shipping';
 import GiftCart from '../Pages/Gift/Cart';
 import GiftSearchProduct from '../Pages/Gift/SearchProduct';
+import ListingPage from '../Pages/ListingPage/Home'
+import ListingProductDetails from '../Pages/ListingPage/ListingProductDetails';
+import Reviews from '../Pages/ListingPage/Reviews';
 
 
 let routes = [
@@ -123,6 +126,22 @@ let routes = [
 		component: GiftSearchProduct,
 		layout: "main",
 	},
+	{
+		path:"/listing-page",
+		component: ListingPage,
+		layout: "main",
+	},
+	{
+		path:"/listing/listingProduct-details",
+		component: ListingProductDetails,
+		layout: "main",
+	},
+	{
+		path:"/listing/reviews",
+		component: Reviews,
+		layout: "main",
+	},
+
 
 ];
 export default routes;
