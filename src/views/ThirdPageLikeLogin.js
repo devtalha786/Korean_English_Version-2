@@ -32,7 +32,7 @@ const ThirdPageLikeLogin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add your login logic here
-    console.log("Form submitted:", formData);
+    // console.log("Form submitted:", formData);
     dispatch(login(formData, ()=> {}));
 };
 

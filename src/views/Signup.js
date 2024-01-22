@@ -95,7 +95,7 @@ const Signup = () => {
             [name]: updatedValue,
         }));
 
-        console.log("Data: ", formData);
+        // console.log("Data: ", formData);
     };
     // Show or hide password
     const toggleShowPassword = () => {
@@ -129,14 +129,14 @@ const Signup = () => {
                 passcode: formData.passcode
 
             };
-            console.log('data gone: ', obj)
+            // console.log('data gone: ', obj)
             dispatch(
                 signUpWithEmail_Password(obj, formData?.password, () => {
                     history.push("/saved-login");
                 })
             );
         }
-        console.log("Form submitted:", formData);
+        // console.log("Form submitted:", formData);
     };
 
     // this is for to add image in user icon

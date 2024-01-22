@@ -33,7 +33,7 @@ export default function Home() {
   const handleCopyCode = () => {
     navigator.clipboard.writeText(code).then(
       function () {
-        console.log('Code copied to clipboard');
+        // console.log('Code copied to clipboard');
       },
       function (err) {
         console.error('Unable to copy to clipboard', err);

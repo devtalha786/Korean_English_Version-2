@@ -5,7 +5,7 @@ export const login =
     (detail, onSuccess = () => {}) =>
     async (dispatch) => {
         await dispatch(Loader(true));
-        console.log("details data",detail)
+        // console.log("details data",detail)
         try {
             await firebase
                 .auth()
@@ -68,12 +68,12 @@ export const signInWithGoogle = () => async (dispatch) => {
                                 createdAt: firebase.firestore.Timestamp.now(),
                             })
                             .then(() => {
-                                console.log("Signup successfully");
+                                // console.log("Signup successfully");
                             });
                     }
                 })
                 .catch((error) => {
-                    console.log(error);
+                    // console.log(error);
                 });
         })
         .catch((error) => {
