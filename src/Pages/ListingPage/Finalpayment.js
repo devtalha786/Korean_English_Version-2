@@ -20,7 +20,7 @@ const Finalpayment = () => {
 
     return (
         <div className="w-full bg-[#f9f9f9] min-h-[100vh] pb-[18px] ">
-            <DetailsHeader clear={"clear"} />
+            <DetailsHeader/>
             <Container className="">
                 <div className="font-extrabold text-2xl  fs--40">
                     <p>최종 결제</p>

@@ -23,6 +23,11 @@ import ListingProductDetails from '../Pages/ListingPage/ListingProductDetails';
 import Reviews from '../Pages/ListingPage/Reviews';
 import Calender from '../Pages/ListingPage/Calender';
 import Finalpayment from '../Pages/ListingPage/Finalpayment';
+import PaymentMethod from '../Pages/ListingPage/PaymentMethod';
+import Popular from '../Pages/ListingPage/Popular';
+import Favourite from '../Pages/ListingPage/Favourite';
+import Search from '../Pages/ListingPage/Search';
+
 
 
 let routes = [
@@ -153,6 +158,27 @@ let routes = [
 		component: Finalpayment,
 		layout: "main",
 	},
+	{
+		path:"/listing/payment-method",
+		component: PaymentMethod,
+		layout: "main",
+	},
+	{
+		path:"/listing/popular",
+		component: Popular,
+		layout: "main",
+	},
+	{
+		path:"/listing/favourite",
+		component: Favourite,
+		layout: "main",
+	},
+	{
+		path:"/listing/search",
+		component: Search,
+		layout: "main",
+	},
+	
 
 
 ];
