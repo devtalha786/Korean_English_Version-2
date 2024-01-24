@@ -10,7 +10,7 @@ const Footer = ({ address }) => {
             <div className="mt-[100px]"></div>
             <div className="fixed bottom-0 z-10 flex items-center justify-center w-full bg-white border-t shadow ">
                 <div className="flex items-center justify-around py-3   w-[90%] w md:w-full md:justify-center md:gap-x-7">
-                    <Link to="/shopping-home">
+                    <Link to="/listing/main-home">
                         <div
                             className={`${
                                 address === "home"
@@ -24,7 +24,7 @@ const Footer = ({ address }) => {
                             />
                         </div>
                     </Link>
-                    <Link to="/shopping/favourte">
+                    <Link to="/listing/Favourite">
                         <div
                             className={`${
                                 address === "favourite"
@@ -41,7 +41,7 @@ const Footer = ({ address }) => {
                     {/* <Link to='/shopping/mycart'><div className={`${address === 'shopping' ? 'bg-[#FED52A]  rounded-xl text-white' : 'text-gray-400 hover:text-[#FED52A] bg-white'} flex flex-col items-center justify-center  gap-y-1`}>
         <TiShoppingCart size={45} className='p-2 cursor-pointer'/>
       </div></Link> */}
-                    <Link to="/shopping/delivery-details">
+                    <Link to="">
                         {" "}
                         <div
                             className={`${

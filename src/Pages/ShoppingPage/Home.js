@@ -190,7 +190,8 @@ const Home = () => {
         <h5 className='w-full px-4 mb-3 text-2xl text-black'>금주의 인기상품</h5>
         
         {/* product */}
-       <Link to='/shopping/product-details' className='w-full hover:no-underline'> <div className='w-[95%] rounded-xl shadow-md flex gap-x-3 p-3'>
+       <Link to='/shopping/product-details' className='w-full hover:no-underline'> 
+       <div className='w-[95%] rounded-xl shadow-md flex gap-x-3 p-3'>
          <img src={product} alt="" />
          <div className='w-full mt-2'>
              <h6 className='text-lg font-bold text-black'>테스트 상품</h6>

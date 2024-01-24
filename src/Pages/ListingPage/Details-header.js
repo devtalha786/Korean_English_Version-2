@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoMenu } from "react-icons/io5";
-import { GoBell } from "react-icons/go";
+import { GoArrowLeft, GoBell } from "react-icons/go";
 import logo from "../../assets/img/sidebar_logo.png";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import SidebarContain from "../../components/Global/SidebarContain";
@@ -11,7 +11,6 @@ export default function DetailsHeader({ title, clear }) {
     const history = useHistory();
 
     const handleBackClick = () => {
-        // Go back to the previous page
         history.goBack();
     };
     const [menuToggle, setMenuToggle] = useState(false);
@@ -43,19 +42,19 @@ export default function DetailsHeader({ title, clear }) {
             <div className="fixed top-0 z-40 w-full ">
                 <nav className="w-full px-2 py-3 bg-white md:py-9 md:px-4 ">
                     <div className="container flex items-center justify-between p-0">
-                        <Link
+                        {/* <Link
                             to={`${
                                 title == "reviews"
-                                    ? "/listing/listingProduct-details"
-                                    : "/listing-page"
+                                    ? "/listing/popular"
+                                    : "/booking/home"
                             } `}
                             className="w-full hover:no-underline"
-                        >
-                            <IoIosArrowBack
-                                size={35}
-                                className="rounded-full p-1 bg-[#f6f6f6] cursor-pointer text-black/75"
-                            />
-                        </Link>
+                        ></Link> */}
+                        <GoArrowLeft
+                            onClick={handleBackClick}
+                            size={35}
+                            className="rounded-full p-1 cursor-pointer text-black/75"
+                        />
 
                         {/* menu icon */}
                         {title === "reviews" ? (

@@ -18,8 +18,8 @@ import GiftFavourite from '../Pages/Gift/Favourite';
 import GiftShipping from '../Pages/Gift/Shipping';
 import GiftCart from '../Pages/Gift/Cart';
 import GiftSearchProduct from '../Pages/Gift/SearchProduct';
-import ListingPage from '../Pages/ListingPage/Home'
-import ListingProductDetails from '../Pages/ListingPage/ListingProductDetails';
+import ListingPage from '../Pages/ListingPage/recent'
+import ListingProductDetails from '../Pages/ListingPage/BookingDetail';
 import Reviews from '../Pages/ListingPage/Reviews';
 import Calender from '../Pages/ListingPage/Calender';
 import Finalpayment from '../Pages/ListingPage/Finalpayment';
@@ -27,6 +27,9 @@ import PaymentMethod from '../Pages/ListingPage/PaymentMethod';
 import Popular from '../Pages/ListingPage/Popular';
 import Favourite from '../Pages/ListingPage/Favourite';
 import Search from '../Pages/ListingPage/Search';
+import heroSection from '../Pages/ListingPage/heroSection';
+import recent from '../Pages/ListingPage/recent';
+import BookingDetail from '../Pages/ListingPage/BookingDetail';
 
 
 
@@ -133,14 +136,35 @@ let routes = [
 		component: GiftSearchProduct,
 		layout: "main",
 	},
+
+
+// hotel booking
 	{
-		path:"/listing-page",
-		component: ListingPage,
+		path:"/booking/home",
+		component: heroSection,
+		layout: "main",
+	},
+
+
+	{
+		path:"/listing/recently-viewed",
+		component: recent,
 		layout: "main",
 	},
 	{
-		path:"/listing/listingProduct-details",
-		component: ListingProductDetails,
+		path:"/listing/popular",
+		component: Popular,
+		layout: "main",
+	},
+	{
+		path:"/listing/Favourite",
+		component: Favourite,
+		layout: "main",
+	},
+
+	{
+		path:"/listing/booking-detail",
+		component: BookingDetail,
 		layout: "main",
 	},
 	{
@@ -163,21 +187,14 @@ let routes = [
 		component: PaymentMethod,
 		layout: "main",
 	},
-	{
-		path:"/listing/popular",
-		component: Popular,
-		layout: "main",
-	},
-	{
-		path:"/listing/favourite",
-		component: Favourite,
-		layout: "main",
-	},
+	
+	
 	{
 		path:"/listing/search",
 		component: Search,
 		layout: "main",
 	},
+	
 	
 
 

@@ -15,14 +15,12 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Footer from "./Footer";
 import hotel1 from "../../assets/img/hotel1.jpg";
 import hotel2 from "../../assets/img/hotel2.jpg";
-import hotel4 from "../../assets/img/hotel4.jpg";
-import hotel5 from "../../assets/img/hotel5.jpg";
-import hotel6 from "../../assets/img/hotel6.jpg";
+import hotel3 from "../../assets/img/hotel3.jpg";
 import { MdStar } from "react-icons/md";
 import star from "../../assets/img/star_icon.png";
 import { Container } from "reactstrap";
 
-const Favourite = () => {
+const recent = () => {
     const array = [
         {
             url: hotel2,
@@ -32,28 +30,28 @@ const Favourite = () => {
             rating: "5.0",
         },
         {
-            url: hotel6,
+            url: hotel1,
             name: "가평 오버더마운틴",
             span: "가평 오버더마운틴",
             pic: star,
-            rating: "4.9",
+            rating: "4.8",
         },
         {
-            url: hotel4,
+            url: hotel2,
             name: "가평 오버더마운틴",
             span: "가평 오버더마운틴",
             pic: star,
-            rating: "5.0",
+            rating: "4.6",
         },
         {
             url: hotel1,
             name: "가평 오버더마운틴",
             span: "가평 오버더마운틴",
             pic: star,
-            rating: "3.2",
+            rating: "4.8",
         },
         {
-            url: hotel6,
+            url: hotel2,
             name: "가평 오버더마운틴",
             span: "가평 오버더마운틴",
             pic: star,
@@ -68,7 +66,7 @@ const Favourite = () => {
                 <Container>
                     <div className="flex flex-col justify-center w-full ">
                         <h2 className="mx-2 font-bold text-xl ">
-                        찜 해놓은 숙소!
+                            최근 본 숙소
                         </h2>
                         {array.map((c) => {
                             return (
@@ -117,4 +115,4 @@ const Favourite = () => {
     );
 };
 
-export default Favourite;
+export default recent;
